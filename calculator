@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>login.com</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input[type=textbox],input[type=password]{
+                width: 250px;
+                padding: 8px;
+                border: 1px solid #f1f1f1;
+                color:#990099;
+                
+            }
+            input[type=textbox]:focus,input[type=password]:focus, input[type=textbox]:active,input[type=password]:active{
+               border:2px solid#990099;
+            }
+            .frm-lgn{
+                height: 45%;
+                width:30%;
+                box-shadow: 0.1px 0.1px 1px 0.1px;
+                padding: 15px;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                margin-left: 450px;
+                margin-top: 200px;
+            }
+            .image-upload{
+                width: 20%;
+                height: 20%;
+                border-radius: 50%;
+                border: 5px solid #990099;
+                color:#990099;
+            }
+           input[type=submit]{
+                border:none;
+                color:#fefefe;
+                background: #990099;
+                opacity: 0.8;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                padding: 10px;
+                width: 66.2%;
+                font-size: medium;
+            }
+            input[type=submit]:hover{
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                opacity: 1;
+            }
+            .img{
+                width:100%;
+                position: relative;
+                overflow: hidden;
+                margin-left: 150px;
+            }
+            .inp{
+                width:100%;
+                position: relative;
+                overflow: hidden;
+                margin-left: 70px;
+            }
+            .btn{
+                border:none;
+                color:#fefefe;
+                background:dodgerblue;
+                opacity: 0.8;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                padding: 10px;
+                width: 66.2%;
+                font-size: medium;    
+            }
+            .btn:hover{
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                opacity: 1;   
+            }
+            .spa{
+                width:inherit;
+                padding-top:10px;
+            }
+            @media screen and(max-width: 300px){}
+        </style>
+        <script type="text/javascript" src="login.js"></script>
+    </head>
+    <body>
+    <form class="frm-lgn" action="login.php" method="GET">
+            <div class="img">
+        <input type="image" src="log.PNG" class="image-upload">
+        </div>
+        <div class="inp">
+        <input type="textbox" placeholder="username" required autofocus>
+        <input type="password" placeholder="password" required autofocus> 
+        <input type="submit" value="Login" >
+        <div class="spa">
+        <button type="button" action="newacc.php" class="btn">Sign up</button>
+        </div>
+        </div>
+    </form>
+    </body>
+</html>
